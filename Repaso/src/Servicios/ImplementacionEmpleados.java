@@ -20,6 +20,19 @@ public class ImplementacionEmpleados implements InterfazEmpleados
 		String apellidos=sc.next();
 		System.out.println("Indique el dni el empleado:");
 		String dni=sc.next();
+		System.out.println("Indique su fecha de cumpleaños:");
+		String fechaNacimiento=sc.next();
+		System.out.println("Indique la titulacion mas alta adquiridas:");
+		String titulacion=sc.next();
+		System.out.println("Indique el numero de la seguirdad social:");
+		int numeroSS=sc.nextInt();
+		System.out.println("Indique el numero de cuenta:");
+		int numeroCuenta=sc.nextInt();
+		//Creamos un objeto para guardar toda la informacion recibida
+		Empleados empleados= new Empleados(nombre,apellidos,dni,fechaNacimiento,
+				titulacion,numeroSS,numeroCuenta);
+		//Añadimos el objeto a la lista
+		listaEmpleados.add(empleados);
 	}
 
 }
