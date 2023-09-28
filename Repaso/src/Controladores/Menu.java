@@ -30,7 +30,9 @@ public class Menu
 			//Creamos un bucle while para poder volver a utilizar el menu de pendiendo de la opcion
 			while(!ok) 
 			{
+				//Mostramos el menu al ususario
 				iM.mostrarMenu();
+				//Guardamos la opcion seleccionada
 				opcion=sc.nextInt();
 				//Con la opcion dado por el usuario creamos un switch con un caso para cada opcion
 				switch(opcion) 
